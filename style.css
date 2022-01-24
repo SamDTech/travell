@@ -1,29 +1,114 @@
 /* Global styles */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-h1{
-    font-size: 2.6rem;
+body {
+  font-family: "Poppins", sans-serif;
 }
-h2{
-    font-size: 4.8rem;
+
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 4.8rem;
 }
 h3 {
-    font-size: 3rem;
+  font-size: 3rem;
+  font-weight: 400;
 }
-h4,h5{
-    font-size: 2.8rem;
+h4,
+h5 {
+  font-size: 2.8rem;
 }
-li,button,p,label,input{
-    font-size: 2rem;
+li,
+button,
+p,
+label,
+input {
+  font-size: 2rem;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Nav Section With Hero */
+.main-head {
+  background: #131c27;
+  color: white;
+}
+
+.main-head nav {
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: 400;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/landing-page.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+@media screen and (max-width: 932px) {
+  html{
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+
+  #logo{
+    padding: 1rem;
+  }
+}
+
